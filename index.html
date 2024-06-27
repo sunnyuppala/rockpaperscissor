@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK-PAPER-SCISSOR</title>
+    <style>
+         .answer{
+            height:30px;
+            width:auto;
+            background-color: aliceblue;
+        }
+        body{
+            background-image:url(./jon-tyson-GpiqJ8Po2g0-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 150px;
+        }
+        button img{
+            height:150px;
+            width:150px;
+            
+        }
+        button{
+            margin:100px;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(136, 32, 233);object-position: center;margin-left:35%;"><b>ROCK-PAPER-SCISSOR</b></h1>
+    <button onclick="
+        let a=Math.random();
+        let aa;
+        if(a>=0 && a<=1/3)
+        {
+            
+            document.querySelector('.answer').innerHTML='tie';
+        }
+        else if(a>1/3 && a<=2/3)
+        {
+            
+            document.querySelector('.answer').innerHTML='computer win , your choice is rock and computer choice paper';
+            
+        }
+        else{
+            aa='scissor';
+            document.querySelector('.answer').innerHTML='you win , your choice is rock and computer choice scissor';
+            
+        } 
+        "><img src="./rock.png"></button>
+    <button onclick="
+    let b=Math.random();
+        let bb;
+        if(b>=0 && b<=1/3)
+        {
+            document.querySelector('.answer').innerHTML='you win , your choice is paper and computer choice rock';
+            
+        }
+        else if(b>1/3 && b<=2/3)
+        {
+            document.querySelector('.answer').innerHTML='tie';
+        }
+        else{
+           
+            document.querySelector('.answer').innerHTML='computer win , your choice is paper and computer choice scissor';
+            
+        } 
+    
+    
+    "><img src="./paper.png"></button>
+    <button onclick="
+    let c=Math.random();
+        let cc;
+        if(c>=0 && c<=1/3)
+        {
+            
+            document.querySelector('.answer').innerHTML='computer win , your choice is scissor and computer choice rock';
+            
+        }
+        else if(c>1/3 && c<=2/3)
+        {
+            
+            document.querySelector('.answer').innerHTML='you win , your choice is scissor and computer choice paper';
+        }
+        else{
+            document.querySelector('.answer').innerHTML='tie';
+        } 
+    
+    "><img src="./scissor.png"></button>
+    
+        <div class="answer">The answer</div>
+    
+</body>
+</html>
